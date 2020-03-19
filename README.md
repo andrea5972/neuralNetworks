@@ -1,4 +1,4 @@
-# Neural Networks (DATA 750)
+# Neural Networks (DATA 850)
 
 ## Spring 2020  
 
