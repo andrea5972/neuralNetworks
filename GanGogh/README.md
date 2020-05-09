@@ -16,6 +16,12 @@
 	[GanGogh’s](http://academictorrents.com/details/1d154cde2fab9ec8039becd03d9bb877614d351b) training dataset
 
 
+
+![The Transmission torrent client ](https://photos.app.goo.gl/sYSLzF4UpzD4Mvt97)
+
+
+
+
  2. **Prepare the Training Data:**
 
 Use `preProcess.py` to create image datasets of 64 by 64 pixels images from the downloaded wikiart data.
