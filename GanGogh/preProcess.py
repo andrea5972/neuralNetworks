@@ -11,9 +11,7 @@ import random
 
 root='./fullimages'
 
-
-#Set your own PATH/Users/andreamurphy/workspace/NeuralNetworks/neuralNetworks/neuralNetworks/GanGogh/misc
-PATH = os.path.normpath('../GanGogh/misc/smallimages/')
+PATH = os.path.normpath('../GanGogh/images/')
 
 for subdir, dirs, files in os.walk(root):
     style = subdir[2:]

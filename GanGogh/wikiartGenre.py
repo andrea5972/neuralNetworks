@@ -1,18 +1,22 @@
-""" Creates batches of images to feed into the training network conditioned by genre, uses upsampling when creating batches to account for uneven distributuions """
-
+"""
+Creates batches of images to feed into the training network conditioned by genre,
+uses upsampling when creating batches to account for uneven distributuions
+"""
 
 import numpy as np
 import scipy.misc
 import time
 import random
 import os
-#Set the dimension of images you want to be passed in to the network
+
+#Sets the dimension of images to be passed in to the network
 DIM = 64
 
-#Set your own path to images
-path = os.path.normpath('C:/Users/kenny/Desktop/toGit/misc/smallimages/')
+#path to images
+path = os.path.normpath('../GanGogh/images/')
 
-#This dictionary should be updated to hold the absolute number of images associated with each genre used during training
+#the styles dict should be updated to hold the absolute number of images
+# associated with each genre used during training
 styles = {'abstract': 14794,
           'animal-painting': 1319,
           'cityscape': 5833,
@@ -73,8 +77,8 @@ def inf_gen(gen):
     while True:
         for (images,labels) in gen():
             yield images,labels
-            
-    
+
+
 
 def make_generator(files, batch_size, n_classes):
     if batch_size % n_classes != 0:
@@ -83,7 +87,7 @@ def make_generator(files, batch_size, n_classes):
     class_batch = batch_size // n_classes
 
     generators = []
-    
+
     def get_epoch():
 
         while True:
@@ -113,9 +117,9 @@ def make_generator(files, batch_size, n_classes):
             np.random.set_state(rng_state)
             np.random.shuffle(labels)
             yield (images, labels)
-                        
 
-        
+
+
     return get_epoch
 
 def load(batch_size):
