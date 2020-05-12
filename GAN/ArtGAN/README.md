@@ -7,5 +7,7 @@
 ## Implementation
 
  1. Gather the Data:
-		The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset was used as the training data.
+		The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset was used as the training data for both ArtGAN implementations
+
+	  
 		
