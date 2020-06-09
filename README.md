@@ -1,5 +1,7 @@
-# Neural Networks (DATA 850)
+#  Neural Networks and Deep Learning
 
-## Spring 2020  
+**Author:** Andrea Murphy 
 
-## Repository for Assignments and Code
+**Programming Language:** Python 3 
+
+**Description:** This repository contains the code for different implementations of neural networks.  
